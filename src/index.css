@@ -10,10 +10,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-a {
-  text-decoration: none;
-}
 
 a:hover {
   text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+  border: 4px solid #391f5b;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d8bfe3;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #391f5b;
 }

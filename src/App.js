@@ -1,6 +1,9 @@
 import './module.scss';
+import browserMockup from './Logo/browser-mockup.svg';
 import chromlogo from './Logo/chrome-logo.dccedd0b.svg';
+import clouds from './Logo/clouds.svg';
 import featuredLogo from './Logo/featured.svg';
+import slide1 from './Logo/slide1.jpg';
 import spatiumLogo from './Logo/spatium.svg';
 
 export default function App() {
@@ -35,10 +38,19 @@ export default function App() {
           <div className="chromButton">
             <a href="/#" className="buttonText">
               <img src={chromlogo} alt="Chrome Web Store" />
-              <p>ADD TO CHROME</p>
+              ADD TO CHROME
               <span>- IT'S FREE</span>
             </a>
           </div>
+        </div>
+        <div className="browser">
+          <img src={browserMockup} alt="mockup" />
+          <div className="slide">
+            <img src={slide1} alt="slide1" />
+          </div>
+        </div>
+        <div>
+          <svg src={clouds} />
         </div>
       </section>
     </>
